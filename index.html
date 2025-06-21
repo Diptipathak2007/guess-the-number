@@ -1,1 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎯 Guess the Number Game ✨</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
 
+<body>
+    <div class="game-container">
+        <h1 class="title">🎯 Guess My Number! ✨</h1>
+        <p class="subtitle">I'm thinking of a number... Can you guess it? 🤔💭</p>
+        
+        <div class="game-info">
+            <div>🎲 I've picked a secret number between 1 and 100!</div>
+            <div class="range-hint">Take your best shot! 🎯</div>
+        </div>
+        
+        <div class="input-section">
+            <input type="number" class="guess-input" id="guessInput" min="1" max="100" placeholder="?">
+            <button class="submit-btn" id="submitBtn">Guess! 🚀</button>
+        </div>
+        
+        <div class="feedback" id="feedback">
+            Ready when you are! 😊🎈
+        </div>
+        
+        <div class="stats">
+            <div class="stat">
+                <div class="stat-number" id="attempts">0</div>
+                <div class="stat-label">Attempts 🎯</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number" id="bestScore">-</div>
+                <div class="stat-label">Best Score 🏆</div>
+            </div>
+        </div>
+        
+        <button class="restart-btn" id="restartBtn">🔄 New Game</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
